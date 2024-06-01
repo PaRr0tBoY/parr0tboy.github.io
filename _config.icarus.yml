@@ -216,11 +216,11 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -236,7 +236,7 @@ widgets:
         # Author's current location
         location: China
         # URL or path to the avatar image
-        avatar: ./source/img/avatar.jpg
+        avatar: img/avatar.jpg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
