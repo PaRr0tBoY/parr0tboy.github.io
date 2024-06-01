@@ -103,7 +103,7 @@ deploy:
   type: git
   repo: https://github.com/PaRr0tBoY/parr0tboy.github.io.git
   branch: main
-  message: newPost
+  message: newPost:{{ now('HH:mm:ss') }})
 algolia:
     applicationID: P5IBAHA926
     indexName: Acid-Site
