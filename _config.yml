@@ -102,4 +102,7 @@ theme: icarus
 deploy:
   type: ''
 
-applyNight: true
+algolia:
+    applicationID: Andex
+    indexName: NX07CQCQA4
+    apiKey: 7b08fca7d42412cee901a25643124221
