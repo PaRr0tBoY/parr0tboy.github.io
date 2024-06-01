@@ -4,10 +4,9 @@ date: {{ date }}
 summary: 
 cover: 
 top: 
-img: 
 disqusId: 
 toc: true
-comments: true
+comment: true
 published: true
 mathjax: true
 categories:
