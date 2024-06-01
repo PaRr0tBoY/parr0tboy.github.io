@@ -8,7 +8,7 @@ logo:
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.png
+    favicon: https://img2.imgtp.com/2024/06/01/wxmXBRwt.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -20,10 +20,10 @@ head:
         # The start URL of the web application
         start_url: https://www.ac1d.cc
         # The default theme color for the application
-        theme_color: "#3273dc"
+        theme_color: "#78909C"
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color: "#3273dc"
+        background_color: "#263238"
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
