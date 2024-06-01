@@ -103,6 +103,6 @@ deploy:
   type: ''
 
 algolia:
-    applicationID: Andex
-    indexName: NX07CQCQA4
+    applicationID: NX07CQCQA4
+    indexName: Andex
     apiKey: 7b08fca7d42412cee901a25643124221
