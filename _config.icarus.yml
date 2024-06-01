@@ -391,3 +391,5 @@ providers:
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: fontawesome
+
+applyNight: true
