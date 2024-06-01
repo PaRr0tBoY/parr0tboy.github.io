@@ -7,6 +7,7 @@ const Footer = require('./common/footer');
 const Scripts = require('./common/scripts');
 const Search = require('./common/search');
 
+
 module.exports = class extends Component {
     render() {
         const { site, config, page, helper, body } = this.props;
@@ -26,7 +27,7 @@ module.exports = class extends Component {
                                 'order-2': true,
                                 'column-main': true,
                                 'is-12': columnCount === 1,
-                                'is-8-tablet is-8-desktop is-8-widescreen': columnCount === 2,
+                                'is-8-tablet is-9-desktop is-9-widescreen': columnCount === 2,
                                 'is-8-tablet is-8-desktop is-6-widescreen': columnCount === 3
                             })} dangerouslySetInnerHTML={{ __html: body }}></div>
                             <Widgets site={site} config={config} helper={helper} page={page} position={'left'} />
