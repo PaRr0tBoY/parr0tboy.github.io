@@ -100,8 +100,10 @@ theme: icarus
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
+  type: git
+  repo: https://github.com/PaRr0tBoY/parr0tboy.github.io.git
+  branch: main
+  message: newPost
 algolia:
     applicationID: P5IBAHA926
     indexName: Acid-Site
