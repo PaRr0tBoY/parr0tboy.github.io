@@ -58,7 +58,7 @@ class Navbar extends Component {
                     </div> : null}
                     <div class="navbar-end">
                     <a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;">
-	                	<i class="fas fa-lightbulb" id="night-icon"></i>
+	                	<i class="fa-solid fa-circle-half-stroke" id="night-icon"></i>
                     </a>
                         {Object.keys(links).length ? <Fragment>
                             {Object.keys(links).map(name => {
