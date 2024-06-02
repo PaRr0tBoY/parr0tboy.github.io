@@ -20,10 +20,10 @@ head:
         # The start URL of the web application
         start_url: https://www.ac1d.cc
         # The default theme color for the application
-        theme_color: "#78909C"
+        theme_color: "#0E1225"
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color: "#263238"
+        background_color: "#0E1225"
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
@@ -107,10 +107,11 @@ navbar:
     # Navigation menu items
     menu:
         首页: /
+        番剧列表: /myanimelist
         归档: /archives
         分类: /categories
-        标签: /tags
         有关: /about
+        日志: /changelog
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:

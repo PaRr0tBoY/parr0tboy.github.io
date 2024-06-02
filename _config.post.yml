@@ -20,10 +20,10 @@ head:
         # The start URL of the web application
         start_url: https://www.ac1d.cc
         # The default theme color for the application
-        theme_color: "#3273dc"
+        theme_color: "#0E1225"
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color: "#3273dc"
+        background_color: "#0E1225"
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
