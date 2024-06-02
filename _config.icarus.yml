@@ -120,7 +120,7 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2024 Site Owned by Acid
+    copyright: 清风不识字，何故乱翻书。
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:

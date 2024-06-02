@@ -3,8 +3,8 @@ common:
         one: '归档'
         other: '归档'
     category:
-        one: '分类'
-        other: '分类'
+        one: '分支'
+        other: '分支'
     tag:
         one: '标签'
         other: '标签'
@@ -18,9 +18,9 @@ common:
     next: '下一页'
 widget:
     follow: '关注我'
-    recents: '最新文章'
-    links: '链接'
-    catalogue: '目录'
+    recents: '近期文章'
+    links: '友链'
+    catalogue: 'INDEX'
     subscribe_email: '订阅更新'
     subscribe: '订阅'
     adsense: '广告'
@@ -28,12 +28,12 @@ widget:
 article:
     created_at: '%s发表'
     updated_at: '%s更新'
-    more: '阅读更多'
+    more: '展开'
     comments: '评论'
     read_time: '%s读完'
     word_count:
-        one: '大约%d个字'
-        other: '大约%d个字'
+        one: '约%d个字'
+        other: '约%d个字'
     licensing:
         author: '作者'
         created_at: '发布于'
@@ -60,7 +60,7 @@ plugin:
       policy: Cookie政策
 search:
     search: '搜索'
-    hint: '想要查找什么...'
-    no_result: '未找到搜索结果'
+    hint: 'War,war never changes...'
+    no_result: '这里是一片贫瘠的荒原'
     untitled: '(无标题)'
     empty_preview: '(无内容预览)'

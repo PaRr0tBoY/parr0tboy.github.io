@@ -3,6 +3,10 @@
  * --------------------------------- */
 $article-font-size ?= 1.1rem
 
+#toc
+    max-height: calc(100vh - 22px)
+    overflow-y: scroll
+
 article
     &.media
         color: $text-light
@@ -48,7 +52,10 @@ article
             margin-bottom: .5rem
 
         .article-more
-            @extend .button.is-light
+            float: right
+            margin-left: 15px
+            margin-top: -25px
+            border-radius: 20px
 
         .content
             word-wrap: break-word
