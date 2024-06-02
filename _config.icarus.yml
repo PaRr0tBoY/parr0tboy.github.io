@@ -165,9 +165,9 @@ search:
     # Whether to include pages in the search results
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: disqus
-    shortname: bo-ke-acid
+#comment:
+    #type: disqus
+    #shortname: bo-ke-acid
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 #donate:
@@ -193,6 +193,7 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
+        sticky: false
         type: profile
         # Author name
         author: Acid

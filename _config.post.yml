@@ -166,9 +166,9 @@ search:
     cx: b6917858b0a2b481c
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: disqus
-    shortname: bo-ke-acid
+#comment:
+    #type: disqus
+    #shortname: bo-ke-acid
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 #donates:
@@ -196,6 +196,7 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: right
+        sticky: false
         type: toc
         # Whether to show the index of each heading
         index: true
