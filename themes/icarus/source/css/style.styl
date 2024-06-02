@@ -1,3 +1,45 @@
+.navbar
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    backdrop-filter: saturate(180%) blur(20px)
+    background-color: rgba(255,255,255,0.7) !important
+
+// Card
+.order-2 .card:hover
+    transform: translateY(-5px)
+    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
+    -webkit-transform: translateY(-5px)
+    -webkit-box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1)
+
+// Add .controller (article.jsx) to invalidate the motion on the article page
+.order-2 .controller ~ .card:hover
+    transform: none
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+    -webkit-transform: none
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
+
+.card
+    transition: background-color .3s,opacity 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.6s !important
+
+.card-link:hover
+    color: inherit !important
+
+// Card Image
+.card:hover
+    .card-image a
+        -webkit-transform: scale(1.03)
+        transform: scale(1.03)
+
+.card .card-image a
+    -webkit-transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    -webkit-transform 400ms cubic-bezier(0.4, 0, 0.25, 1),200ms -webkit-filter linear
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.25, 1),
+    transform 400ms cubic-bezier(0.4, 0, 0.25, 1),200ms filter linear
+
+// Fix border radius when transforming
+.card-image
+    transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+
 // Base CSS framework
 @import '../../include/style/base'
 // Helper classes & mixins

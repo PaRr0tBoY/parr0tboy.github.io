@@ -1,4 +1,5 @@
 /* eslint-disable node/no-unsupported-features/node-builtins */
+
 (function($, moment, ClipboardJS, config) {
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
@@ -137,3 +138,5 @@
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
+
+

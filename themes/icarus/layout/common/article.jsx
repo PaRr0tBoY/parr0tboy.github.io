@@ -5,7 +5,6 @@ const Share = require('./share');
 const Donates = require('./donates');
 const Comment = require('./comment');
 const ArticleLicensing = require('hexo-component-inferno/lib/view/misc/article_licensing');
-
 /**
  * Get the word count of text.
  */
@@ -34,6 +33,7 @@ module.exports = class extends Component {
         const shouldShowUpdated = page.updated && ((updateTime === 'auto' && isUpdated) || updateTime === true);
 
         return <Fragment>
+            {!index ? <div class="controller"></div> : null}
             {/* Main content */}
             <div class="card">
                 {/* Thumbnail */}
