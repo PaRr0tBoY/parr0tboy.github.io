@@ -6,6 +6,7 @@ tags:
 - 日记
 cover: https://img2.imgtp.com/2024/05/31/boxqrVLK.png
 ---
+题记：本篇介绍Github Pages
 <!--more-->
 花了一下午的时间折腾github page，终于部署出来了，却没有什么实感。
 
