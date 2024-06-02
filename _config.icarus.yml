@@ -181,7 +181,7 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: true
+        sticky: false
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
@@ -193,7 +193,6 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
-        sticky: false
         type: profile
         # Author name
         author: Acid
@@ -255,7 +254,7 @@ widgets:
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
