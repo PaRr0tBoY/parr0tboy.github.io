@@ -106,12 +106,9 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        首页: /
-        归档: /archives
-        分类: /categories
-        有关: /about
         番剧清单: /myanimelist
         更新日志: /changelog
+        有关: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
