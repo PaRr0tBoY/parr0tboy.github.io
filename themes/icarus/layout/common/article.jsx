@@ -50,9 +50,9 @@ module.exports = class extends Component {
                     <h1 className="title is-size-3 is-size-4-mobile has-text-weight-normal">
                         {index ?
                             <a className="has-link-black-ter" href={url_for(page.link || page.path)}>
-                                <i className="fas fa-angle-double-right"></i>{page.title}
+                                {page.title}
                             </a> :
-                            [<i className="fas fa-angle-double-right"></i>, page.title]
+                            [page.title]
                         }
                     </h1>
                     {page.layout !== 'page' ? <div class="article-meta is-size-7 is-uppercase level is-mobile">

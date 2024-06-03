@@ -1,9 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-summary: 
-cover: 
-top: 
+urlname: 
+summary:  
+cover:
+thumbnail:  
+top: 100
 toc: true
 comment: true
 published: true

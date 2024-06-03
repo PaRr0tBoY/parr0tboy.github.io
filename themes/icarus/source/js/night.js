@@ -18,7 +18,7 @@
       }
   }
   
-	applyNight(true);
+	
 	
   function findNightNav() {
       nightNav = document.getElementById('night-nav');

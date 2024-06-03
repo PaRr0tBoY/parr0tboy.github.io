@@ -1,12 +1,21 @@
 ---
 title: 用DNSBench找出解析域名速度最快的DNS
 date: 2024-05-24 21:14:33
-tags: 
-- DNS
-- 测试
-- 日记
+urlname: dnsbench
+summary: dnsbench accelarate
 cover: https://img.picui.cn/free/2024/06/01/665b025fa47eb.png
-top: 30
+thumbnail: https://picui.cn/thumbnails/f639bc691f2ca5a2d44924b590982988.png
+top: 100
+toc: true
+comment: true
+published: true
+mathjax: true
+categories:
+- 工具
+tags:
+- 生产力
+- 效率
+- dns
 ---
 省流：最后还是没能裸连Github •ᴗ•💧
 <!--more-->

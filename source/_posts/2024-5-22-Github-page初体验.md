@@ -1,19 +1,22 @@
 ---
 title: Github Pages初体验
 date: 2024-05-22 21:14:33
-tags: 
+urlname: github_page 
+summary:  A post about github pages
+cover: https://img.picui.cn/free/2024/06/01/665b025f6d1be.png
+thumbnail: https://picui.cn/thumbnails/79c084b5a77983e44f64436ca9c0846d.png
+top: 100
+toc: true
+comment: true
+published: false
+mathjax: true
+categories: 
+- 笔记
+tags:
 - 感想
 - 日记
-cover: https://img2.imgtp.com/2024/05/31/boxqrVLK.png
-published: false
 ---
 题记：本篇介绍Github Pages
 <!--more-->
-花了一下午的时间折腾github page，终于部署出来了，却没有什么实感。
 
-本来应该会有成就感什么的，但是现在的心境下感觉还是挫败感更多，本来应该是很简单的事情，但是越弄越复杂，时间如沙似的流走，几乎一整天都砸在这件事情上。
-
-有时候会想我是不是真的很蠢，我总是不能轻易应付各种各样的事情，总是比其他人慢半拍，一旦到这时候就会要自暴自弃，心理崩溃，包裹在心脏上的那层壳子就像破房子的墙花一样的剥落，尽管嘴上说的好听，但其实早就破了防，硬着头皮也要守住最后一丝尊严。
-
-这大概也是为什么我总是半途而废，不管想要学什么都浅尝辄止，从来没有深入过，但凡在某方面被超越，就安慰自己是没有卷，没有去争去抢，不然就不会被轻易超越了，从而更加理所应当更加尽心尽力的躺平摆烂，我实在是不太喜欢这样的自己。
 
