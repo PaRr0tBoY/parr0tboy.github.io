@@ -106,7 +106,7 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        主页: www.ac1d.cc/blog/
+        文章: /blog
         番剧清单: /myanimelist
         变更日志: /changelog
     # Links to be shown on the right of the navigation bar
