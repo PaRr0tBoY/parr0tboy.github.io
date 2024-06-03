@@ -1,9 +1,10 @@
 ---
 title: Acid的博客主页
+layout: post
 date: 2024-06-01 18:34:12
 ---
 
-![Banner Image](https://img.picui.cn/free/2024/06/03/665d53b89891d.jpeg
+![ ](https://img.picui.cn/free/2024/06/03/665d53b89891d.jpeg
 )
 
 # 关于我
