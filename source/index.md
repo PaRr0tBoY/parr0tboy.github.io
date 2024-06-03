@@ -13,5 +13,5 @@ date: 2024-06-01 18:34:12
 <p style="font-size:1.2rem;line-height:1.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed euismod, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl eget nisl.</p>
 
 <div style="text-align:center;margin-top:2rem;">
-  <a href="https://www.ac1d.cc" style="display:inline-block;background-color:#007bff;color:#fff;padding:0.8rem 1.6rem;border-radius:0.4rem;text-decoration:none;font-size:1.1rem;">进入</a>
+  <a href="https://www.ac1d.cc/blog/" style="display:inline-block;background-color:#007bff;color:#fff;padding:0.8rem 1.6rem;border-radius:0.4rem;text-decoration:none;font-size:1.1rem;">进入</a>
 </div>
