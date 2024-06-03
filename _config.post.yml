@@ -106,18 +106,18 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        主页: /
+        文章: /blog
         番剧清单: /myanimelist
         更新日志: /changelog
     # Links to be shown on the right of the navigation bar
-    links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: https://github.com/PaRr0tBoY   
+#    links:
+#        Download on GitHub:
+#            icon: fab fa-github
+#            url: https://github.com/PaRr0tBoY   
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2024 Site Owned by Acid
+    copyright: © 2024 Site Owned By Acid,All Right Reserved.
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
