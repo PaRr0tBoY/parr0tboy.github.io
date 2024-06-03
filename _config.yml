@@ -4,7 +4,7 @@
 
 # Site
 title: 博客 | ACID
-subtitle: Acid的私有公共空间
+subtitle: Acid的私有空间
 description: 笔记、事记、日记
 keywords: 博客，技术，分享
 author: Acid
@@ -59,7 +59,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: '/blog'
   per_page: 5
   order_by: -date
 
