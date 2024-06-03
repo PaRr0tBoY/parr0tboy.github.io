@@ -145,18 +145,19 @@ article:
     # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
     update_time: true
     # Article licensing block
-    licenses:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
-        Noncommercial:
-            icon: fab fa-creative-commons-nc
-            url: https://creativecommons.org/licenses/by-nc/4.0/
+#    licenses:
+#        Creative Commons:
+#            icon: fab fa-creative-commons
+#            url: https://creativecommons.org/
+#        Attribution:
+#            icon: fab fa-creative-commons-by
+#            url: https://creativecommons.org/licenses/by/4.0/
+#        Noncommercial:
+#            icon: fab fa-creative-commons-nc
+#            url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+
 search:
     type: algolia
 # Comment plugin configurations
@@ -199,26 +200,26 @@ widgets:
         # Maximum level of headings to show (1-6)
         depth: 6
     # Categories widget configurations
-    -
+#    -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: categories
+#        position: right
+#        type: categories
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: recent_posts
+#        position: right
+#        type: recent_posts
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: tags
+#        position: right
+#        type: tags
         # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
-        order_by: name
+#        order_by: name
         # Amount of tags to show. Will show all if not set.
-        amount: 
+#        amount: 
         # Whether to show tags count, i.e. number of posts in the tag.
-        show_count: true
+#        show_count: true
 
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
