@@ -79,7 +79,7 @@ class Profile extends Component {
                 <hr />
                 <div class="motto">
                     <p id="a">
-                        <strong style="color: #BDBDBD">Don't be sorry,be better</strong>
+                        <strong style="color: #80CBC4">「保持清醒，直至消亡」</strong>
                     </p>
                 </div>
             </div>

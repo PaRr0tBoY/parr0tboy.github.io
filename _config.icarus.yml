@@ -307,13 +307,6 @@ plugins:
         policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
-    # Google Analytics plugin settings
-    # https://analytics.google.com
-    google_analytics:
-        # Google Analytics tracking ID
-        tracking_id: 
-    # Hotjar user feedback plugin
-    # https://www.hotjar.com/
     hotjar:
         # Hotjar site id
         site_id: 

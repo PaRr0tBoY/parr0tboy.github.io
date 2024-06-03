@@ -158,9 +158,7 @@ article:
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
-    type: google_cse
-    # Whether to include pages in the search results
-    cx: b6917858b0a2b481c
+    type: algolia
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 #comment:
@@ -264,11 +262,6 @@ plugins:
         policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
-    # Google Analytics plugin settings
-    # https://analytics.google.com
-    google_analytics:
-        # Google Analytics tracking ID
-        tracking_id: 
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
     hotjar:
