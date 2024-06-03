@@ -108,7 +108,7 @@ navbar:
     menu:
         文章: /blog
         番剧清单: /myanimelist
-        更新日志: /changelog
+        变更日志: /changelog
     # Links to be shown on the right of the navigation bar
 #    links:
 #        Download on GitHub:
