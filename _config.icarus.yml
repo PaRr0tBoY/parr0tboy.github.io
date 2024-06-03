@@ -145,16 +145,18 @@ article:
     # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
     update_time: true
     # Article licensing block
-    licenses:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
-        Noncommercial:
-            icon: fab fa-creative-commons-nc
-            url: https://creativecommons.org/licenses/by-nc/4.0/
+#    licenses:
+#        Creative Commons:
+#            icon: fab fa-creative-commons
+#            url: https://creativecommons.org/
+#        Attribution:
+#            icon: fab fa-creative-commons-by
+#            url: https://creativecommons.org/licenses/by/4.0/
+#        Noncommercial:
+#            icon: fab fa-creative-commons-nc
+#            url: https://creativecommons.org/licenses/by-nc/4.0/
+# Search plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
