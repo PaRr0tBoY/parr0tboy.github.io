@@ -1,10 +1,10 @@
 ---
-title: changelog
+title: CHANGELOG
 date: 2024-06-02 11:44:05
 ---
 
 <body>
-    <h2><i class="fa-solid fa-thumbtack icon"></i>Working On:</h2>
+    <h3><i class="fa-solid fa-thumbtack icon"></i>Working On:</h3>
     <ul>
         <li>改变webfont</li>
         <li>网页加载动画</li>
@@ -25,7 +25,7 @@ date: 2024-06-02 11:44:05
 ---
 
 <body>
-    <h2><i class="fa-solid fa-check icon"></i>Finished:</h2>
+    <h3><i class="fa-solid fa-check icon"></i>Finished:</h3>
     <ul>
         <li>05.31 
             <ul>
@@ -71,6 +71,10 @@ date: 2024-06-02 11:44:05
                 <li>为文章配置略缩图</li>
                 <li>配置top，方便排列文章</li>
                 <li>去掉disqus</li>
+                <li>更新permalink，现在文章链接更美观</li>
+                <li>去除文章前的图标</li>
+                <li>变更日志现在用html写了，并添加了图标</li>
+				<li>优化主页显示，图片增加圆角，分割线添加样式</li>
             </ul>
         </li>
     </ul>
