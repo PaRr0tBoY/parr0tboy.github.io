@@ -159,7 +159,8 @@ article:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 
 search:
-    type: algolia
+    type: insight
+    include_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 #comment:

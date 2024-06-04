@@ -160,7 +160,8 @@ article:
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
-    type: algolia
+    type: insight
+    include_pages: true
     # Whether to include pages in the search results
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
@@ -274,11 +275,6 @@ plugins:
     animejs: true
     # Show the "back to top" button
     back_to_top: true
-    # Baidu Analytics plugin settings
-    # https://tongji.baidu.com
-    baidu_analytics:
-        # Baidu Analytics tracking ID
-        tracking_id: d9c9d452ac6724091eaa8c08e2602e9e
     # Bing Webmaster Tools plugin settings
     # https://www.bing.com/toolbox/webmaster/
     bing_webmaster:
