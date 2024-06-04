@@ -17,7 +17,9 @@
           document.body.classList.add('light');
       }
   }
-
+  
+	
+	
   function findNightNav() {
       nightNav = document.getElementById('night-nav');
       if (!nightNav) {
@@ -32,8 +34,6 @@
       applyNight(isNight);
       localStorage.setItem('night', isNight);
   }
-
-  applyNight(true);
 
   findNightNav();
   isNight && applyNight(isNight);

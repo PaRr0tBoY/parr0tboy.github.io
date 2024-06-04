@@ -1,4 +1,5 @@
 /* eslint-disable node/no-unsupported-features/node-builtins */
+
 (function($, moment, ClipboardJS, config) {
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
@@ -20,11 +21,11 @@
         $('.justified-gallery').justifiedGallery();
     }
 
-    if (typeof moment === 'function') {
+/*    if (typeof moment === 'function') {
         $('.article-meta time').each(function() {
             $(this).text(moment($(this).attr('datetime')).fromNow());
         });
-    }
+    }*/
 
     $('.article > .content > table').each(function() {
         if ($(this).width() > $(this).parent().width()) {
@@ -122,6 +123,7 @@
 
     const $toc = $('#toc');
     if ($toc.length > 0) {
+        $toc.addClass('column-left is-sticky');
         const $mask = $('<div>');
         $mask.attr('id', 'toc-mask');
 
@@ -136,4 +138,9 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
+    
+    $('div.container div.card[data-type=tags]').addClass('is-hidden-mobile');
+    $('div.container div.card[data-type=archives]').addClass('is-hidden-mobile');
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
+
+
