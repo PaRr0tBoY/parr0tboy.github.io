@@ -8,17 +8,16 @@ date: 2024-06-02 11:44:05
     <ul>
         <li>改变webfont</li>
         <li>网页加载动画</li>
-        <li>评论服务</li>
         <li>自动切换夜间日间模式</li>
         <li>换分析系统</li>
         <li>抓包分析什么阻碍了加载</li>
-        <li>给所有元素加圆角</li>
-        <li>尝试毛玻璃应用到卡片</li>
-        <li>寻找合适背景</li>
         <li>番剧列表</li>
         <li>seo优化，优化网页在搜索引擎结果中的显示</li>
         <li>性能优化</li>
         <li>更新robot.txt</li>
+		<li>更换cdn</li>
+		<li>修复评论</li>
+		<li>优化日间模式</li>
     </ul>
 </body>
 
@@ -77,5 +76,24 @@ date: 2024-06-02 11:44:05
 				<li>优化主页显示，图片增加圆角，分割线添加样式</li>
             </ul>
         </li>
+		<li>06.04
+			<ul>
+				<li>评论服务</li>
+				<li>优化了加载速度，压缩html，css文件</li>
+				<li>去除了algolia和百度分析服务</li>
+				<li>将博客源文件夹保留在本地，使用hexo deploy部署博客</li>
+				<li>添加懒加载gif</li>
+				<li>替换全部封面图，去图床化，直到找到更好更稳定的图床和cdn</li>
+				<li>暗色模式下，卡片全部毛玻璃化，添加背景图片</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+			<li>更换jsCDN和iconCDN为bootcdn</li>
+			<li>换用smms图床，并配以picgo管理，压制图片</li>
+			<li>添加打字机特效</li>
+			<li></li>
+			</ul>
+		</li>
     </ul>
 </body>

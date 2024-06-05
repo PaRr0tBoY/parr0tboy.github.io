@@ -3,7 +3,7 @@ title: Github Pages初体验
 date: 2024-05-22 21:14:33
 urlname: github_page 
 summary:  A post about github pages
-cover: https://img.picui.cn/free/2024/06/01/665b025f6d1be.png
+cover: ../img/githubpages.PNG"
 thumbnail: https://picui.cn/thumbnails/79c084b5a77983e44f64436ca9c0846d.png
 top: 100
 toc: true

@@ -8,7 +8,7 @@ logo:
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: https://img2.imgtp.com/2024/06/01/wxmXBRwt.png
+    favicon: 'img\favicon-32x32.png'
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -18,7 +18,7 @@ head:
         # when there is not enough space to display full name
         short_name: ACID
         # The start URL of the web application
-        start_url: https://www.ac1d.cc
+        start_url: https://ac1d.space
         # The default theme color for the application
         theme_color: "#0E1225"
         # A placeholder background color for the application page to display
@@ -117,7 +117,7 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2024 Site Owned By Acid,All Right Reserved.
+    copyright: © 2024 All rights reserved.
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -163,9 +163,12 @@ search:
     include_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-#comment:
-    #type: disqus
-    #shortname: bo-ke-acid
+comment:
+    type: utterances
+    repo: PaRr0tBoY/parr0tboy.github.io #Your-GitHub-Username/Your-Public-Repo-Name
+    issue_term: pathname       # 必填项，与issue_number二选一填写
+    label: comments     # 可选填
+    theme: dark-blue
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 #donates:
@@ -253,13 +256,13 @@ plugins:
     # https://www.osano.com/cookieconsent/
     cookie_consent:
         # The compliance type. Can be "info", "opt-in", or "opt-out"
-        type: info
+        type: opt-in
         # Theme of the popup. Can be "block", "edgeless", or "classic"
-        theme: edgeless
+        theme: block
         # Whether the popup should stay static regardless of the page scrolls
         static: false
         # Where on the screen the consent popup should display
-        position: bottom-left
+        position: bottom-right
         # URL to your site's cookie policy
         policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
@@ -296,8 +299,12 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: jsdelivr
+    cdn: bootcdn
     # Name or URL template of the webfont CDN provider
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: fontawesome
+    iconcdn: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/css/all.css'
+
+bottom:
+  - <script defer https://npm.elemecdn.com/vue@2.6.11"></script>
+  - <script async src="https://cdn.jsdelivr.net/gh/zjwo/CDN/js/pyq/pyq.min.js"></script>

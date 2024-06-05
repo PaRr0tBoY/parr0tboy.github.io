@@ -35,8 +35,7 @@ class Footer extends Component {
                             {footerLogo}
                         </a>
                         <p class="is-size-7">
-                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;Owned Website
+                        <span>本网站由</span><a class="footer-support-logo" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank" title="又拍云"><img style="width: 50px; height: 25px;vertical-align: middle;" border="0" src="/img/upyun.png" alt="又拍云"></img></a><span>提供 CDN 加速/云存储服务</span>
                             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
                         	<script dangerouslySetInnerHTML={{
                         		__html: `
@@ -50,7 +49,7 @@ class Footer extends Component {
                         			mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
                         			seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
                         			snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-                        			document.getElementById("timeDate").innerHTML = "| 本站已运行 "+dnum+" 天 ";
+                        			document.getElementById("timeDate").innerHTML = "| 已运行 "+dnum+" 天 ";
                         			document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                         		}
                         		setInterval("createtime()",250);

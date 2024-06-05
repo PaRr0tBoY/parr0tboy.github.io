@@ -13,8 +13,15 @@ dark-font-color = #c0c0c0
   .logo-img-dark
     display: none
 
-body.night
-  background: #0e1225
+body.night{ 
+    background-image: url(/img/bkg1.jpg);//改成自己的背景地址
+    background-position: center center;//居中显示图片
+    background-repeat: no-repeat;//如果不指定则会重复显示图片直到把页面填满
+    background-attachment: fixed;//固定图片不随页面滚动
+    background-size: cover;//指定图片大小为覆盖整个页面
+    //background-color: #RRGGBBAA;//当然你也可以只指定背景色
+}
+//background: #0e1225
 
 .night
   // code highlight (https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css)
@@ -35,11 +42,12 @@ body.night
     &:hover,
     &:focus
       color: #ffffff
-      background-color: dark-primary-color
+      background-color: #FFFFFF80
+      border-radius: 10px
   .card
-    background-color: #262932 !important
-    backdrop-filter: none
-    -webkit-backdrop-filter: none
+    background-color: #26293280 !important
+    backdrop-filter: blur(15px)
+    -webkit-backdrop-filter: blur(15px)
 
   .card
     &:hover
