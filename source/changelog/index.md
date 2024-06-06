@@ -1,81 +1,84 @@
 ---
 title: CHANGELOG
 date: 2024-06-02 11:44:05
+comment: false
 ---
 
 <body>
-    <h3><i class="fa-solid fa-thumbtack icon"></i>Working On:</h3>
-    <ul>
-        <li>改变webfont</li>
-        <li>网页加载动画</li>
-        <li>自动切换夜间日间模式</li>
-        <li>换分析系统</li>
-        <li>抓包分析什么阻碍了加载</li>
-        <li>番剧列表</li>
-        <li>seo优化，优化网页在搜索引擎结果中的显示</li>
-        <li>性能优化</li>
-        <li>更新robot.txt</li>
+	<h3><i class="fa-solid fa-thumbtack icon"></i>Working On:</h3>
+	<ul>
+		<li>改变webfont</li>
+		<li>网页加载动画</li>
+		<li>自动切换夜间日间模式</li>
+		<li>换分析系统</li>
+		<li>抓包分析什么阻碍了加载</li>
+		<li>番剧列表</li>
+		<li>seo优化，优化网页在搜索引擎结果中的显示</li>
+		<li>性能优化</li>
+		<li>更新robot.txt</li>
 		<li>更换cdn</li>
 		<li>修复评论</li>
 		<li>优化日间模式</li>
-    </ul>
+		<li>公安备案</li>
+		<li>将网站放到upyun的cdn</li>
+	</ul>
 </body>
 
 ---
 
 <body>
-    <h3><i class="fa-solid fa-check icon"></i>Finished:</h3>
-    <ul>
-        <li>05.31 
-            <ul>
-                <li>迁移至Hexo，部署Metarial主题</li>
-                <li>迁移所有文章</li>
-            </ul>
-        </li>
-        <li>06.01
-            <ul>
-                <li>添加深色主题并设置为默认</li>
-                <li>为卡片添加圆角和鼠标悬浮响应</li>
-                <li>将卡片位置下移避免被导航栏遮挡，使导航栏始终置顶</li>
-                <li>修复回到顶部按钮错位</li>
-                <li>配置一系列第三方服务，评论、内置搜索等</li>
-                <li>编写readme</li>
-                <li>更改导航栏文字为中文，添加有关页面</li>
-                <li>修改Post.md的frontmatter格式，使其更全面</li>
-            </ul>
-        </li>
-        <li>06.02
-            <ul>
-                <li>为文章卡片添加鼠标悬浮动画</li>
-                <li>为导航栏添加毛玻璃效果，移动端访问单排显示</li>
-                <li>添加番剧清单、更新日志两个页面</li>
-                <li>改动页脚，去除默认copyright，添加站点运作时间</li>
-                <li>改动默认文本翻译风格</li>
-                <li>post界面固定目录，其余卡片随界面划走</li>
-                <li>优化移动界面显示</li>
-                <li>优化首页卡片显示，标题在其他信息之上</li>
-                <li>添加背景图片，同一张图片分明暗</li>
-                <li>简化了导航栏分类</li>
-                <li>优化了滚动条显示</li>
-            </ul>
-        </li>
-        <li>06.03
-            <ul>
-                <li>强化了卡片动画效果</li>
-                <li>更换了深浅主题切换图标</li>
-                <li>修改了个人卡片字段，添加分割符并增加格言</li>
-                <li>将&lt;!--more--&gt;置于所有文章最前，只在首页显示短句</li>
-                <li>添加了默认主页，现在不会直接打开帖子界面</li>
-                <li>修改generator.js，使得top属性有效化</li>
-                <li>为文章配置略缩图</li>
-                <li>配置top，方便排列文章</li>
-                <li>去掉disqus</li>
-                <li>更新permalink，现在文章链接更美观</li>
-                <li>去除文章前的图标</li>
-                <li>变更日志现在用html写了，并添加了图标</li>
+	<h3><i class="fa-solid fa-check icon"></i>Finished:</h3>
+	<ul>
+		<li>05.31 
+			<ul>
+				<li>迁移至Hexo，部署Metarial主题</li>
+				<li>迁移所有文章</li>
+			</ul>
+		</li>
+		<li>06.01
+			<ul>
+				<li>添加深色主题并设置为默认</li>
+				<li>为卡片添加圆角和鼠标悬浮响应</li>
+				<li>将卡片位置下移避免被导航栏遮挡，使导航栏始终置顶</li>
+				<li>修复回到顶部按钮错位</li>
+				<li>配置一系列第三方服务，评论、内置搜索等</li>
+				<li>编写readme</li>
+				<li>更改导航栏文字为中文，添加有关页面</li>
+				<li>修改Post.md的frontmatter格式，使其更全面</li>
+			</ul>
+		</li>
+		<li>06.02
+			<ul>
+				<li>为文章卡片添加鼠标悬浮动画</li>
+				<li>为导航栏添加毛玻璃效果，移动端访问单排显示</li>
+				<li>添加番剧清单、更新日志两个页面</li>
+				<li>改动页脚，去除默认copyright，添加站点运作时间</li>
+				<li>改动默认文本翻译风格</li>
+				<li>post界面固定目录，其余卡片随界面划走</li>
+				<li>优化移动界面显示</li>
+				<li>优化首页卡片显示，标题在其他信息之上</li>
+				<li>添加背景图片，同一张图片分明暗</li>
+				<li>简化了导航栏分类</li>
+				<li>优化了滚动条显示</li>
+			</ul>
+		</li>
+		<li>06.03
+			<ul>
+				<li>强化了卡片动画效果</li>
+				<li>更换了深浅主题切换图标</li>
+				<li>修改了个人卡片字段，添加分割符并增加格言</li>
+				<li>将&lt;!--more--&gt;置于所有文章最前，只在首页显示短句</li>
+				<li>添加了默认主页，现在不会直接打开帖子界面</li>
+				<li>修改generator.js，使得top属性有效化</li>
+				<li>为文章配置略缩图</li>
+				<li>配置top，方便排列文章</li>
+				<li>去掉disqus</li>
+				<li>更新permalink，现在文章链接更美观</li>
+				<li>去除文章前的图标</li>
+				<li>变更日志现在用html写了，并添加了图标</li>
 				<li>优化主页显示，图片增加圆角，分割线添加样式</li>
-            </ul>
-        </li>
+			</ul>
+		</li>
 		<li>06.04
 			<ul>
 				<li>评论服务</li>
@@ -87,13 +90,13 @@ date: 2024-06-02 11:44:05
 				<li>暗色模式下，卡片全部毛玻璃化，添加背景图片</li>
 			</ul>
 		</li>
-		<li>
+		<li>06.05
 			<ul>
-			<li>更换jsCDN和iconCDN为bootcdn</li>
-			<li>换用smms图床，并配以picgo管理，压制图片</li>
-			<li>添加打字机特效</li>
-			<li></li>
+				<li>更换jsCDN和iconCDN为bootcdn</li>
+				<li>换用又拍云图床，并配以picgo管理，压制图片</li>
+				<li>ac1d.cc->ac1d.space</li>
+				<li>域名从namesilo更换至腾讯云</li>
 			</ul>
 		</li>
-    </ul>
+	</ul>
 </body>
