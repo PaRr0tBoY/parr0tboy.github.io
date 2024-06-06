@@ -168,8 +168,8 @@ search:
 comment:
     type: utterances
     repo: PaRr0tBoY/parr0tboy.github.io #Your-GitHub-Username/Your-Public-Repo-Name
-    issue_term: pathname       # 必填项，与issue_number二选一填写
-    label: comments     # 可选填
+    issue_term: title
+    label: 💬comments     # 可选填
     theme: dark-blue
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
@@ -297,7 +297,7 @@ plugins:
     # https://www.osano.com/cookieconsent/
     cookie_consent:
         # The compliance type. Can be "info", "opt-in", or "opt-out"
-        type: opt-in
+        type: info
         # Theme of the popup. Can be "block", "edgeless", or "classic"
         theme: block
         # Whether the popup should stay static regardless of the page scrolls
