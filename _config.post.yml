@@ -8,7 +8,7 @@ logo:
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: 'img\favicon-32x32.png'
+    favicon: 'img/favicon-32x32.png'
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -18,7 +18,7 @@ head:
         # when there is not enough space to display full name
         short_name: acidsblog
         # The start URL of the web application
-        start_url: https://ac1d.space
+        start_url: https://ac1d.space/blog
         # The default theme color for the application
         theme_color: "#0E1225"
         # A placeholder background color for the application page to display
@@ -164,11 +164,10 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    enable: true
     type: utterances
-    repo: PaRr0tBoY/parr0tboy.github.io #Your-GitHub-Username/Your-Public-Repo-Name
+    repo: PaRr0tBoY/parr0tboy.github.io
     issue_term: title
-    label: 💬comments   # 可选填
+    label: 💬comments
     theme: dark-blue
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/

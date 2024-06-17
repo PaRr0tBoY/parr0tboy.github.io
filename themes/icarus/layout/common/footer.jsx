@@ -35,7 +35,9 @@ class Footer extends Component {
                             {footerLogo}
                         </a>
                         <p class="is-size-7">
-                        <span>本网站由</span><a class="footer-support-logo" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank" title="又拍云"><img style="width: 50px; height: 25px;vertical-align: middle;" border="0" src="/img/upyun.png" alt="又拍云"></img></a><span>提供 CDN 加速/云存储服务</span>
+                        <a class="footer-support-logo" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank" title="又拍云"><img style="width: 50px; height: 25px;vertical-align: middle;" border="0" src="/img/upyun.png" alt="又拍云"></img></a>
+                        <br/>
+                        <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024266018号-1</a>
                             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
                         	<script dangerouslySetInnerHTML={{
                         		__html: `

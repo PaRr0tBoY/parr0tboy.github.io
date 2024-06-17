@@ -8,7 +8,7 @@ logo:
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: 'img\favicon-32x32.png'
+    favicon: 'img/favicon-32x32.png'
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -30,7 +30,7 @@ head:
         icons:
             -
                 # The path to the image file
-                src: 'img\apple-touch-icon.png'
+                src: 'img/apple-touch-icon.png'
                 # A string containing space-separated image dimensions
                 sizes: '180x180'
                 # A hint as to the media type of the image
