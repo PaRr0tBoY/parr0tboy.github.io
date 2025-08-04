@@ -6,7 +6,7 @@
   <link href="https://www.ac1d.space/atom.xml" rel="self"/>
   
   <link href="https://www.ac1d.space/"/>
-  <updated>2024-11-13T03:16:35.461Z</updated>
+  <updated>2025-08-04T08:59:47.072Z</updated>
   <id>https://www.ac1d.space/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Compiled Input-Leap: A Tool for Sharing Mouse and Keyboard Between MacOS and   Windows(Took Me Whole Morning)</title>
+    <link href="https://www.ac1d.space/2025/08/04/null/"/>
+    <id>https://www.ac1d.space/2025/08/04/null/</id>
+    <published>2025-08-04T08:59:12.000Z</published>
+    <updated>2025-08-04T08:59:47.072Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>SQL Server Practice: Multibyte Characters Displayed With Incorrect Encoding</title>
     <link href="https://www.ac1d.space/2024/11/12/multibyte-character-display-issues/"/>
     <id>https://www.ac1d.space/2024/11/12/multibyte-character-display-issues/</id>
     <published>2024-11-12T07:58:29.000Z</published>
-    <updated>2024-11-13T03:16:35.461Z</updated>
+    <updated>2024-11-28T09:45:15.778Z</updated>
     
     <content type="html"><![CDATA[<p>Insight of why all multibyte character is printed as ‘?’</p><span id="more"></span><h2 id="the-issues"><a class="markdownIt-Anchor" href="#the-issues"></a> The Issues</h2><p>So in this semester.I took a database course and we use sql server as learning materials which is a headache for me.Since I use mac as my main working pc while Microsoft developed the sql server so it’s natural that sql server is not compatible for mac. To install it on my Mac, I have to borrow the power of virtual machine. After careful consideration of convenience and performance issues, I decided to use containers to install it. As an alternative to Docker, I chose Orbstack. It gave me a native Mac vibe while being free (for personal use). With simplicity and high performance, Orbstack is my best choice and imho the best option for any mac user with container requirements (I’m not their salesman tho).<br />I have previously written a step by step guide on how to install sql server on mac with container. Check that article if needed. The main topic of this article came to me when I was dealing with the professor’s assignment. When I tried to select a few rows from a given table, it turned out that all the Chinese characters were displayed as question marks, which is quite tricky since in this case I cannot get the correct result set when Chinese characters are contained in the WHERE clause. All Chinese characters are recognised as ‘?’ by the DBMS, so the WHERE clause has lost all meaning.</p><p><img src="https://www.ac1d.space/img/202411121638633.png" alt="Chinese was not correctly encoded in the new query page." /></p><p><img src="https://www.ac1d.space/img/202411121602100.png" alt="Chinese was not correctly encoded in the result set." /></p><h2 id="the-analyze"><a class="markdownIt-Anchor" href="#the-analyze"></a> The Analyze</h2><p>It occurs to me that ‘?’ means the DBMS used the wrong decoding for Chinese characters, which is why all Chinese characters are displayed as ‘?’, because the DBMS couldn’t find the correct symbol to display the Chinese character. So the actual problem is how to tell the DBMS to use the correct decoding. I tried to look this up in the settings with the keyword ‘encoding’ and found the following setting picture below. After changing it to Simplified Chinese (GB18030), I restarted Azure Data Studio and found that this fixed the display of Chinese characters in the new query page. However, the Chinese characters in the result set are still a mess.</p><p><img src="https://www.ac1d.space/img/202411121732298.png" alt="The encoding setting" /></p><h2 id="the-research"><a class="markdownIt-Anchor" href="#the-research"></a> The Research</h2><p>Later, after looking at the <a href="https://learn.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?view=sql-server-ver16">Official Sql Server Website</a>, I found this very useful information.</p><blockquote><p>Prefix a Unicode character string constants with the letter N to signal UCS-2 or UTF-16 input, depending on whether an SC collation is used or not. Without the N prefix, the string is converted to the default code page of the database that might not recognize certain characters.</p></blockquote><p>So I have two options: Either replace all char/varchar to nchar/nvarchar or use an SC (Supplementary Characters) collation. I decided to try the former first.</p><p>I drop the database with the code snippets below. To avoid crashes and accidental data corruption, we should set the database to single user mode and drop it. Also note that all connections to the database to be dropped should be disconnected before running the following code.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> DATABASE database_name <span class="keyword">SET</span> SINGLE_USER <span class="keyword">WITH</span> <span class="keyword">ROLLBACK</span> IMMEDIATE; <span class="comment">--Set Single User mode</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> DATABASE database_name <span class="comment">--Drop Database with database name</span></span><br></pre></td></tr></table></figure><p><img src="https://www.ac1d.space/img/29113.png" alt="The execution result" /></p><p>After running the above code, make sure that <code>database_name</code> is actually dropped. Then recreate the database and tables to see if Chinese characters (or other multi-byte characters) are displayed correctly.</p><p>Turns out mine works fine.</p><p><img src="https://www.ac1d.space/img/86674.png" alt="The correct version of select result" /></p><p>There is another way: Set the SC collation. After looking through <a href="https://learn.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver16">Collation and unicode support</a>, I got this <code>Chinese_PRC_CI_AS</code>. So I dropped and recreated the database with the code below and recreated all the tables, multi-byte characters (Chinese) displayed correctly again.</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE database_name <span class="comment">--Create Database &#x27;database_name&#x27;</span></span><br><span class="line"><span class="keyword">COLLATE</span> Chinese_PRC_CI_AS; <span class="comment">--Enable Chinese_PRC_CI_AS Collation for database</span></span><br></pre></td></tr></table></figure><p>After all, this is just another encoding problem. It’s possible that if we don’t explicitly enable SC collation, the string will fall back to the default codepage, which may not recognise certain multibyte characters. These characters are outside the range of datatypes stored under non-SC collation, so we might need to explicitly enable SC collation or use the N prefix to signal UCS-2 or UTF-16 input.</p><h2 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h2><p><a href="https://learn.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver16">collation-and-unicodode</a></p><p><a href="https://learn.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?view=sql-server-ver16">nchar-and-nvarchar-transact-sql</a></p><p><a href="https://help.aliyun.com/zh/rds/apsaradb-rds-for-sql-server/resolve-garbled-characters-in-tables-of-sql-server-databases">resolve-garbled-characters-in-tables-of-sql-server-databases</a></p><p><a href="https://www.cnblogs.com/listjiang/p/16504594.html">解决 SqlServer中文乱码问题</a></p><p><a href="https://stackoverflow.com/questions/144283/what-is-the-difference-between-varchar-and-nvarchar">what-is-the-difference-between-varchar-and-nvarchar</a></p>]]></content>
     
@@ -42,46 +62,6 @@
     <category term="debug" scheme="https://www.ac1d.space/tags/debug/"/>
     
     <category term="笔记" scheme="https://www.ac1d.space/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Test</title>
-    <link href="https://www.ac1d.space/2024/10/18/null/"/>
-    <id>https://www.ac1d.space/2024/10/18/null/</id>
-    <published>2024-10-18T02:49:50.000Z</published>
-    <updated>2024-10-18T02:49:50.100Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Test</title>
-    <link href="https://www.ac1d.space/2024/10/18/null/"/>
-    <id>https://www.ac1d.space/2024/10/18/null/</id>
-    <published>2024-10-18T02:49:32.000Z</published>
-    <updated>2024-10-18T02:49:32.285Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
-      
-    
-    
-    
     
   </entry>
   
