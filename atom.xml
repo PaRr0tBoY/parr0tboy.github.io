@@ -6,7 +6,7 @@
   <link href="https://www.ac1d.space/atom.xml" rel="self"/>
   
   <link href="https://www.ac1d.space/"/>
-  <updated>2025-08-04T08:59:47.072Z</updated>
+  <updated>2024-11-28T09:45:15.778Z</updated>
   <id>https://www.ac1d.space/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Compiled Input-Leap: A Tool for Sharing Mouse and Keyboard Between MacOS and   Windows(Took Me Whole Morning)</title>
-    <link href="https://www.ac1d.space/2025/08/04/null/"/>
-    <id>https://www.ac1d.space/2025/08/04/null/</id>
-    <published>2025-08-04T08:59:12.000Z</published>
-    <updated>2025-08-04T08:59:47.072Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>SQL Server Practice: Multibyte Characters Displayed With Incorrect Encoding</title>
@@ -99,11 +79,11 @@
     <category term="工具" scheme="https://www.ac1d.space/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
+    <category term="技术" scheme="https://www.ac1d.space/tags/%E6%8A%80%E6%9C%AF/"/>
+    
     <category term="insight" scheme="https://www.ac1d.space/tags/insight/"/>
     
     <category term="感想" scheme="https://www.ac1d.space/tags/%E6%84%9F%E6%83%B3/"/>
-    
-    <category term="技术" scheme="https://www.ac1d.space/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -174,11 +154,11 @@
     <category term="工具" scheme="https://www.ac1d.space/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
+    <category term="日记" scheme="https://www.ac1d.space/tags/%E6%97%A5%E8%AE%B0/"/>
+    
     <category term="bugfixes" scheme="https://www.ac1d.space/tags/bugfixes/"/>
     
     <category term="Arc浏览器" scheme="https://www.ac1d.space/tags/arc%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-    <category term="日记" scheme="https://www.ac1d.space/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
@@ -199,11 +179,11 @@
     <category term="工具" scheme="https://www.ac1d.space/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
+    <category term="生产力" scheme="https://www.ac1d.space/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/"/>
+    
     <category term="效率" scheme="https://www.ac1d.space/tags/%E6%95%88%E7%8E%87/"/>
     
     <category term="破解" scheme="https://www.ac1d.space/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
-    <category term="生产力" scheme="https://www.ac1d.space/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/"/>
     
   </entry>
   
@@ -247,9 +227,9 @@
     <category term="工具" scheme="https://www.ac1d.space/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="效率" scheme="https://www.ac1d.space/tags/%E6%95%88%E7%8E%87/"/>
-    
     <category term="生产力" scheme="https://www.ac1d.space/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/"/>
+    
+    <category term="效率" scheme="https://www.ac1d.space/tags/%E6%95%88%E7%8E%87/"/>
     
     <category term="dns" scheme="https://www.ac1d.space/tags/dns/"/>
     
